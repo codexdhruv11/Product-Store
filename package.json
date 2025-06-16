@@ -1,0 +1,24 @@
+{
+  "name": "product-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon BACK-END/server.js",
+    "build": "npm install && npm install --prefix FRONT-END && npm run build --prefix FRONT-END",
+    "start": "npm run build && cross-env NODE_ENV=production node BACK-END/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0",
+    "express": "^4.19.2",
+    "mongoose": "^8.15.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
